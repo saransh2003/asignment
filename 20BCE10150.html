@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Personal Info</title>
+        <style>
+            table,
+            th,
+            td {
+                padding: 10px;
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            a {
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Use HTML to construct a form that will allow you to submit your personal information. (Use text fields, password fields, email, lists, radio buttons, checkboxes, and the submit button)
+ -->
+        <form action="submit-form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" /><br />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" /><br />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" /><br />
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other</label><br />
+            <br />
+
+            <label for="hobbies">Hobbies:</label>
+            <input
+                type="checkbox"
+                id="hobby1"
+                name="hobbies[]"
+                value="reading"
+            />
+            <label for="hobby1">Reading</label>
+            <input
+                type="checkbox"
+                id="hobby2"
+                name="hobbies[]"
+                value="writing"
+            />
+            <label for="hobby2">Writing</label>
+            <input
+                type="checkbox"
+                id="hobby3"
+                name="hobbies[]"
+                value="traveling"
+            />
+            <label for="hobby3">Traveling</label><br />
+
+            <label for="languages">Languages spoken:</label>
+            <input
+                type="checkbox"
+                id="english"
+                name="languages"
+                value="english"
+            />
+            <label for="english">English</label>
+
+            <input type="checkbox" id="hindi" name="languages" value="hindi" />
+            <label for="hindi">Hindi</label>
+
+            <input
+                type="checkbox"
+                id="panjabi"
+                name="languages"
+                value="panjabi"
+            />
+            <label for="panjabi">Panjabi</label>
+
+            <input type="checkbox" id="other" name="languages" value="other" />
+            <label for="other">Other</label><br /><br />
+
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="">Select a country</option>
+                <option value="AU">Australia</option>
+                <option value="IN">India</option>
+                <option value="US">United States</option>
+                <option value="UK">United Kingdom</option>
+                <option value="CA">Canada</option>
+            </select>
+            <br />
+
+            <input type="submit" value="Submit" />
+        </form>
+
+        <br /><br />
+        <!-- Use HTML to create a table to show books for "PHP" and their buying links (Amazon, Flipkart etc.). The table must also have use of "rowspan" and "colspan".
+ -->
+        <table>
+            <tr>
+                <th>Book Title</th>
+                <th colspan="2">Buying Links</th>
+            </tr>
+            <tr>
+                <td>PHP & MySQL: Server-side Web Development</td>
+                <td>
+                    <a href="https://www.amazon.com/PHP" target="_blank"
+                        >Amazon</a
+                    >
+                </td>
+                <td>
+                    <a href="https://www.flipkart.com/php" target="_blank"
+                        >Flipkart</a
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td>PHP: The Complete Reference</td>
+                <td>
+                    <a href="https://www.amazon.com/PHP" target="_blank"
+                        >Amazon</a
+                    >
+                </td>
+                <td>
+                    <a href="https://www.flipkart.com/php" target="_blank"
+                        >Flipkart</a
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td>PHP and MySQL for Dynamic Web Sites</td>
+                <td>
+                    <a href="https://www.amazon.com/PHP" target="_blank"
+                        >Amazon</a
+                    >
+                </td>
+                <td>
+                    <a href="https://www.flipkart.com/php" target="_blank"
+                        >Flipkart</a
+                    >
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
